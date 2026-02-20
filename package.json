@@ -1,0 +1,42 @@
+{
+  "name": "collaborant",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "build": "npx tsup src/index.ts",
+    "start": "npx tsup src/index.ts && NODE_ENV=production node ./dist/index.js",
+    "dev": "tsup src/index.ts --watch --onSuccess 'node dist/index.js'"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@cointelegraph/schema-of-prosemirror": "2.1.6",
+    "@sentry/node": "^9.1.0",
+    "@sentry/profiling-node": "^9.1.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.14.1",
+    "axios": "^1.7.9",
+    "concurrently": "^9.1.2",
+    "cookie": "^1.0.2",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "ioredis": "^5.5.0",
+    "jsdom": "^26.0.0",
+    "lib0": "^0.2.99",
+    "nodemon": "^3.1.9",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "ws": "^8.18.0",
+    "y-prosemirror": "^1.2.15",
+    "y-protocols": "^1.0.6",
+    "yjs": "^13.6.23"
+  },
+  "resolutions": {
+    "prosemirror-model": "1.13.1"
+  },
+  "packageManager": "yarn@4.1.1"
+}
