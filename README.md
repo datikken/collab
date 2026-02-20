@@ -1,4 +1,4 @@
-# Fastify, yjs, websocket app
+# Express, yjs, websocket app
 
 To install dependencies: 
 
